@@ -9,5 +9,5 @@ export function setupCounter(element) {
 }
 
 
-<button id="counter" type="button"></button>
-setupCounter(document.querySelector('#counter'))
+{/* <button id="counter" type="button"></button>
+setupCounter(document.querySelector('#counter')) */}

@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #161616;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,10 +15,26 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-
+header{
+  text-align: center;
+  margin-top:10vh;
 }
-
-
-#app {
+header h1{
+  position: relative;
+  top:3.5rem;
+  right:9rem;
+  font-size: 82px;
+  color: rgb(54, 54, 54);
+  z-index: 0;
+  text-shadow:
+    -1px -1px 0 rgb(101, 101, 101),
+    1px -1px 0 rgb(101, 101, 101),
+    -1px 1px 0 rgb(101, 101, 101),
+    1px 1px 0 rgb(101, 101, 101);  
 }
+.intro{
+  position: relative;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  }

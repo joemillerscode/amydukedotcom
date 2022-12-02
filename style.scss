@@ -20,11 +20,14 @@ header {
 
 
 #gallery {
-  columns: 4 200px;
+  columns: 5 200px;
   column-gap: 1.5rem;
   width: 90%;
-  margin: 0 auto;
-  border-bottom:2px dotted red; 
+  margin: 5rem 2rem;
+  border-bottom:2px dotted red;
+  max-height: 110vh; 
+  // overflow: hidden;
+  position: relative;
   div {
     margin: 0 1.5rem 1.5rem 0;
     display: inline-block;
@@ -46,4 +49,11 @@ header {
 }
 .margin-top{
   margin-top:1rem !important;
+}
+
+.rand{
+  height:4rem;
+  width:4rem;
+  background-color: white;
+  border: 2px solid red;
 }

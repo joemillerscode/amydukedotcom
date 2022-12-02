@@ -1,36 +1,33 @@
 import './style.scss'
-
-
 const images = import.meta.glob('./img/*.jpg')
-
-// for (const path in images) {
-//   images[path]().then((mod) => {
-//     console.log(path, mod)
-//   })
-// }
-
 const  galleryTiles = document.querySelectorAll('.test')
+
 const srcArr = []
-
-
 for (const path in images) {
-  images[path]().then(img => {
-    
-  })
+  srcArr.push(path)
 }
 
-// import javascriptLogo from './img/2time.jpeg'
-// import { setupCounter } from './counter.js'
+function shuffleArray(array) {
+  console.log('shug')
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+}
 
-// const photoWall = document.querySelector('#photo-wall');
+const galleryWrapper = document.getElementById('gallery')
 
-// photoWall.addEventListener('wheel', (event) => {
-//   event.preventDefault();
+shuffleArray(srcArr)
 
-//   photoWall.scrollBy({
-//     left: event.deltaY < 0 ? -30 : 30,
-    
-//   });
-// });
+for (let i = 0; i < srcArr.length; i++){
 
-//horizontal scroll with mousewheel above.
+    const photoDiv = document.createElement('div')
+    photoDiv.className = "img-container"
+
+    const galleryImg = document.createElement('img')
+    galleryImg.src = srcArr[i]
+
+    photoDiv.appendChild(galleryImg)
+
+    galleryWrapper.appendChild(photoDiv)
+}

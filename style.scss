@@ -46,20 +46,21 @@ header {
       font-size: 3rem;
       position: relative;
       right: 3rem;
+      font-family: sans;
     }
     h3 {
       position: relative;
       top: 2rem;
       left: 3.5rem;
-      font-family: "Anybody", cursive;
+      // font-family: "Anybody", cursive;
     }
     .amy {
-      font-family: "Anybody", cursive;
       position: relative;
       left: 4rem;
       bottom:1.3rem;
     }
     .duke {
+      // font-family: sans;
       position: relative;
       top: 1rem;
       right: 2rem;
@@ -71,7 +72,7 @@ header {
       right: 3.5rem;
       line-height: 130%;
       text-align: right;
-      font-family: "Anybody", cursive;
+      font-family:sans-serif;
       font-size: 0.9rem;
       min-height: 8rem ;
       span{

@@ -1,9 +1,6 @@
-import './style.scss'
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import './style.scss' 
 const images = import.meta.glob('./img/*.jpg')
 
-AOS.init();
 const srcArr = []
 for (const path in images) {
   srcArr.push(path)

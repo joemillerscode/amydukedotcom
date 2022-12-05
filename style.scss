@@ -24,7 +24,7 @@ header {
   margin-top: 5rem;
   z-index: 9;
   max-height: 20rem;
-  width: 40rem;
+  max-width: 40rem;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 2rem;
   position: fixed;
@@ -46,7 +46,6 @@ header {
       font-size: 3rem;
       position: relative;
       right: 3rem;
-      font-family: sans;
     }
     h3 {
       position: relative;
@@ -194,12 +193,26 @@ header {
   }
 }
 
-// @keyframes fontSizeChange {
-//   from {
-//     font-size: 1rem;
-//   }
-//   to {
-//     font-size: 0.9rem;
-//     line-height:120%;
-//   }
-// }
+@media only screen and (max-width: 680px) {
+  header{
+    margin:0;
+    max-width:100vw;
+    min-height:100vh;
+    
+    .container {
+      h3{
+        position: static;
+      }
+      .creds{
+        position:unset;
+        text-align: left;
+      }
+      .nav-bar{
+        position: static;
+      }
+    }
+  }
+
+  //nav closes and only shows the photo gallery background and the hamburger menu button
+
+}

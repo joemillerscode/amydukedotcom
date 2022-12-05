@@ -1,6 +1,9 @@
 import './style.scss'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 const images = import.meta.glob('./img/*.jpg')
 
+AOS.init();
 const srcArr = []
 for (const path in images) {
   srcArr.push(path)
@@ -14,6 +17,9 @@ function shuffleArray(array) {
   }
 }
 
+console.log(`${Math.ceil(Math.random() * 5) * 1000}ms`)
+console.log(Math.floor(Math.random() * (6 - 2 + 1)) + 2)
+
 function addImagesToDom(imgArr) {
   const galleryWrapper = document.getElementById('gallery')
   imgArr.map(image => {
@@ -24,11 +30,9 @@ function addImagesToDom(imgArr) {
   })
 }
   
-  
   // --------------------------------------------------------------
 shuffleArray(srcArr)
 
-let imgCounter = 0
 const loadedImgs = []
 
 for (let i = 0; i < srcArr.length; i++){

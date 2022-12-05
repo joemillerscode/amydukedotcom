@@ -83,21 +83,21 @@ header {
         &:nth-child(1){
           animation-delay: 2500ms;
         }
-      }
-      span:nth-child(2){
-        animation-delay: 2700ms;
-      }
-      span:nth-child(3){
-        animation-delay: 2900ms;
-      }
-      span:nth-child(4){
-        animation-delay: 3100ms;
-      }
-      span:nth-child(5){
-        animation-delay: 3300ms;
-      }
-      span:nth-child(6){
-        animation-delay: 3600ms;
+        &:nth-child(2){
+          animation-delay: 2700ms;
+        }
+        &:nth-child(3){
+          animation-delay: 2900ms;
+        }
+        &:nth-child(4){
+          animation-delay: 3100ms;
+        }
+        &:nth-child(5){
+          animation-delay: 3300ms;
+        }
+        &:nth-child(6){
+          animation-delay: 3600ms;
+        }
       }
     }
     .nav-bar {
@@ -121,8 +121,6 @@ header {
     column-gap: 1.5rem;
     width: 95%;
     margin: 0 auto;
-
-
     div {
       margin: 0 1.5rem 1.5rem 0;
       display: inline-block;

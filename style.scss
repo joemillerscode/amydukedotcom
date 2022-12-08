@@ -37,10 +37,10 @@ header {
     padding: 1rem;
     position: relative;
     top: 1rem;
-    .close-btn{
+    .close-btn {
       position: absolute;
-      right:1.5rem;
-      top:-0.5rem;
+      right: 1.5rem;
+      top: -0.5rem;
     }
     h1 {
       font-size: 3rem;
@@ -56,7 +56,7 @@ header {
     .amy {
       position: relative;
       left: 4rem;
-      bottom:1.3rem;
+      bottom: 1.3rem;
     }
     .duke {
       // font-family: sans;
@@ -71,31 +71,31 @@ header {
       right: 3.5rem;
       line-height: 130%;
       text-align: right;
-      font-family:sans-serif;
+      font-family: sans-serif;
       font-size: 0.9rem;
-      min-height: 8rem ;
-      span{
-        opacity:0;
+      min-height: 8rem;
+      span {
+        opacity: 0;
         display: block;
         animation: fromTheLeft 1s, colorChange 5s, fontSizeChange 6s;
         animation-fill-mode: forwards;
         // color: gold;
-        &:nth-child(1){
+        &:nth-child(1) {
           animation-delay: 2500ms;
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           animation-delay: 2700ms;
         }
-        &:nth-child(3){
+        &:nth-child(3) {
           animation-delay: 2900ms;
         }
-        &:nth-child(4){
+        &:nth-child(4) {
           animation-delay: 3100ms;
         }
-        &:nth-child(5){
+        &:nth-child(5) {
           animation-delay: 3300ms;
         }
-        &:nth-child(6){
+        &:nth-child(6) {
           animation-delay: 3600ms;
         }
       }
@@ -145,17 +145,17 @@ header {
   }
 }
 
-.open-btn{
-    position: absolute;
-    right:1.5rem;
-    top:1rem;
-    font-size: 2rem;
-    line-height: 1.8rem;
-    display:block;
-    padding:1rem;
-    border-radius: 50%;
-    border: red solid 1px;
-    z-index:9;
+.open-btn {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  display: block;
+  padding: 1rem;
+  border-radius: 50%;
+  border: red solid 1px;
+  z-index: 9;
 }
 
 @keyframes fadeIn {
@@ -180,38 +180,37 @@ header {
 
 @keyframes colorChange {
   0% {
-    color:gold;
+    color: gold;
   }
-  50%{
-    color:rgb(255, 248, 209);
+  50% {
+    color: rgb(255, 248, 209);
   }
   100% {
-    color:gold;
+    color: gold;
   }
 }
-
-@media only screen and (max-width: 680px) {
-  header{
-    margin:0;
-    max-width:100vw;
+@media only screen and (max-width: 590px) {
+  header {
+    // margin:0;
+    // max-width:100vw;
     // min-height:50vh;
-    
+
     .container {
-      h3{
+      h3 {
         position: static;
       }
-      .creds{
-        position:unset;
-        text-align: left;
+      .creds {
+        position: unset;
+        text-align: right;
       }
-      .nav-bar{
+      .nav-bar h4 {
         position: relative;
-        left:8rem;
-        bottom:7rem;
+        right: 9rem;
+        bottom: 3rem;
+        font-style: italic;
       }
     }
   }
 
-  //nav closes and only shows the photo gallery background and the hamburger menu button
-
+  //on mobile we'll eventually have a nav closed on load and only show the photo gallery background and the hamburger menu button
 }

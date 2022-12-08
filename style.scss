@@ -105,6 +105,9 @@ header {
       justify-content: space-evenly;
       position: relative;
       bottom: 4rem;
+      h4{
+        font-style: italic;
+      }
     }
   }
 }
@@ -205,12 +208,26 @@ header {
       }
       .nav-bar h4 {
         position: relative;
-        right: 9rem;
+        right: 10rem;
         bottom: 3rem;
-        font-style: italic;
       }
     }
   }
-
-  //on mobile we'll eventually have a nav closed on load and only show the photo gallery background and the hamburger menu button
 }
+@media only screen and (max-width: 480px) {
+
+  .nav-bar h4 {
+    margin-left:5rem;
+  }
+    
+  
+}
+@media only screen and (max-width: 390px) {
+
+  .nav-bar h4 {
+    margin-left:7rem;
+  }
+    
+  
+}
+//on mobile we'll eventually have a nav closed on load and only show the photo gallery background and the hamburger menu button

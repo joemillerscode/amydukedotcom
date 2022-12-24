@@ -15,239 +15,104 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.nav-bar{
+  width:100vw;
+  display:flex;
+  justify-content: space-evenly;
+  margin:none;
+
+}
+.nav-bar a{
+  text-decoration: none;
+  color: white;
+}
+
+
 
 //on mobile we'll eventually have a nav closed on load and only show the photo gallery background and the hamburger menu button
 
-@media screen and (max-width: 420px) {
-  body{
-    background-image:url('./img/111.jpg') ;
-    background-position: -10rem ;
-    background-size:cover;
-    height:100vh;
-    background-repeat: no-repeat;
-  }
-  .circle{
-    width:8.5rem;
-    height:8.5rem;
-    border: solid white 2px;
-    border-radius: 50%;
-    background-color: rgb(40, 110, 176);
-    position: absolute; 
-    right:2rem;
-    top:2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .amy{
-    position: relative;
-    // bottom:.75rem;
-    left:1rem;
-  }
-  .duke{
-    position: relative;
-    top:1.5rem;
-    right:3rem;
-  }
-  .circle h3{
-    font-size: 0.5rem;
-    position: relative;
-    bottom:0.5rem;
-    left:0.8rem;
-  }
 
-  .creds{
-    position: relative;
-    top:15rem;
-    right:2rem;
-    // padding:1rem;
-    text-align: right;
-    font-size: 0.8rem;
-    width:100%;
-    background-color: rgba(0, 0, 0, 0.614);
-    padding:1rem;
-    span {
-      opacity: 0;
-      display: block;
-      animation: fromTheLeft 1s, colorChange 5s, fontSizeChange 6s;
-      animation-fill-mode: forwards;
-      // color: gold;
-      &:nth-child(1) {
-        animation-delay: 500ms;
-      }
-      &:nth-child(2) {
-        animation-delay: 700ms;
-      }
-      &:nth-child(3) {
-        animation-delay: 900ms;
-      }
-      &:nth-child(4) {
-        animation-delay: 1100ms;
-      }
-      &:nth-child(5) {
-        animation-delay: 1300ms;
-      }
-      &:nth-child(6) {
-        animation-delay: 1600ms;
-      }
-    }
-  }
-}
+// @media screen and (max-width: 500px) {
+//   body{
+//     background-image:url('./img/111.jpg') ;
+//     background-position: -5rem ;
+//     background-size:cover;
+//     height:100vh;
+//     background-repeat: no-repeat;
+//   }
+//   .circle{
+//     width:8.5rem;
+//     height:8.5rem;
+//     border: solid white 2px;
+//     border-radius: 50%;
+//     background-color: rgb(40, 110, 176);
+//     position: absolute; 
+//     right:2rem;
+//     top:2rem;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//   }
+//   .amy{
+//     position: relative;
+//     // bottom:.75rem;
+//     left:1rem;
+//   }
+//   .duke{
+//     position: relative;
+//     top:1.5rem;
+//     right:3rem;
+//   }
+//   .circle h3{
+//     font-size: 0.5rem;
+//     position: relative;
+//     bottom:0.5rem;
+//     left:0.8rem;
+//   }
 
-@media screen and (min-width: 420px) {
-  body{
-    background-image:url('./img/111.jpg') ;
-    background-position: -5rem ;
-    background-size:cover;
-    height:100vh;
-    background-repeat: no-repeat;
-  }
-  .circle{
-    width:8.5rem;
-    height:8.5rem;
-    border: solid white 2px;
-    border-radius: 50%;
-    background-color: rgb(40, 110, 176);
-    position: absolute; 
-    right:2rem;
-    top:2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .amy{
-    position: relative;
-    // bottom:.75rem;
-    left:1rem;
-  }
-  .duke{
-    position: relative;
-    top:1.5rem;
-    right:3rem;
-  }
-  .circle h3{
-    font-size: 0.5rem;
-    position: relative;
-    bottom:0.5rem;
-    left:0.8rem;
-  }
-
-  .creds{
-    position: relative;
-    top:15rem;
-    right:2rem;
-    // padding:1rem;
-    text-align: right;
-    font-size: 0.8rem;
-    width:100%;
-    background-color: rgba(0, 0, 0, 0.614);
-    padding:1rem;
-    span {
-      opacity: 0;
-      display: block;
-      animation: fromTheLeft 1s, colorChange 5s, fontSizeChange 6s;
-      animation-fill-mode: forwards;
-      // color: gold;
-      &:nth-child(1) {
-        animation-delay: 500ms;
-      }
-      &:nth-child(2) {
-        animation-delay: 700ms;
-      }
-      &:nth-child(3) {
-        animation-delay: 900ms;
-      }
-      &:nth-child(4) {
-        animation-delay: 1100ms;
-      }
-      &:nth-child(5) {
-        animation-delay: 1300ms;
-      }
-      &:nth-child(6) {
-        animation-delay: 1600ms;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 500px) {
-  body{
-    background-image:url('./img/111.jpg') ;
-    background-position: center;
-    background-size:cover;
-    height:100vh;
-    background-repeat: no-repeat;
-  }
-  .circle{
-    width:8.5rem;
-    height:8.5rem;
-    border: solid white 2px;
-    border-radius: 50%;
-    background-color: rgb(40, 110, 176);
-    position: absolute; 
-    right:2rem;
-    top:2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .amy{
-    position: relative;
-    // bottom:.75rem;
-    left:1rem;
-  }
-  .duke{
-    position: relative;
-    top:1.5rem;
-    right:3rem;
-  }
-  .circle h3{
-    font-size: 0.5rem;
-    position: relative;
-    bottom:0.5rem;
-    left:0.8rem;
-  }
-
-  .creds{
-    position: relative;
-    top:15rem;
-    right:2rem;
-    // padding:1rem;
-    text-align: right;
-    font-size: 0.8rem;
-    width:100%;
-    background-color: rgba(0, 0, 0, 0.614);
-    padding:1rem;
-    span {
-      opacity: 0;
-      display: block;
-      animation: fromTheLeft 1s, colorChange 5s, fontSizeChange 6s;
-      animation-fill-mode: forwards;
-      // color: gold;
-      &:nth-child(1) {
-        animation-delay: 500ms;
-      }
-      &:nth-child(2) {
-        animation-delay: 700ms;
-      }
-      &:nth-child(3) {
-        animation-delay: 900ms;
-      }
-      &:nth-child(4) {
-        animation-delay: 1100ms;
-      }
-      &:nth-child(5) {
-        animation-delay: 1300ms;
-      }
-      &:nth-child(6) {
-        animation-delay: 1600ms;
-      }
-    }
-  }
-}
-
-
-
+//   .creds{
+//       // clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+//     // clip-path: polygon(0% 0%,60% 100%, 100% 100%, 100% 0, 0 0);
+//     margin:0;
+//     border: 2px solid white;
+//     position: relative;
+//     top:15rem;
+//     left:10%;
+//     padding:1rem;
+//     font-weight:600;
+//     text-align: right;
+//     font-size: 0.8rem;
+//     width:75%;
+//     background-color: rgba(0, 0, 0, 0.614);
+//     padding:1rem;
+//     animation: fadeIn 3s;
+//     span {
+//       opacity: 0;
+//       display: block;
+//       animation: fromTheLeft 1s, colorChange 5s, fontSizeChange 6s;
+//       animation-fill-mode: forwards;
+//       // color: gold;
+//       &:nth-child(1) {
+//         animation-delay: 500ms;
+//       }
+//       &:nth-child(2) {
+//         animation-delay: 700ms;
+//       }
+//       &:nth-child(3) {
+//         animation-delay: 900ms;
+//       }
+//       &:nth-child(4) {
+//         animation-delay: 1100ms;
+//       }
+//       &:nth-child(5) {
+//         animation-delay: 1300ms;
+//       }
+//       &:nth-child(6) {
+//         animation-delay: 1600ms;
+//       }
+//     }
+//   }
+// }
 
 
 
@@ -274,12 +139,12 @@
 
 @keyframes colorChange {
   0% {
-    color: gold;
+    color: white;
   }
   50% {
-    color: rgb(255, 248, 209);
+    color: gold;
   }
   100% {
-    color: gold;
+    color: white;
   }
 }

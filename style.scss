@@ -1,11 +1,10 @@
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgb(0, 0, 0);
   background-color: #161616;
 
   font-synthesis: none;
@@ -14,18 +13,68 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-.nav-bar{
-  width:100vw;
+*{
+  margin:0px;
+}
+body{
   display:flex;
+}
+header{
+  display: flex;
+}
+.img-container{
+  overflow:hidden;
+  max-width:40vw;
+  border-right:0.3rem white solid;
+}
+.img-container img{
+  height: 100vh;
+}
+.logo{
+  margin:1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  font-style: italic;
+  border-top:10px solid white;
+  border-bottom:10px solid white;
+  height:min-content;
+}
+.amy{
+  position: relative;
+  font-weight: 400;
+  // border-top:10px solid white;
+  // border-bottom:10px solid white;
+}
+.duke{
+  position: relative;
+  font-weight: 900;
+  // border-top:10px solid white;
+  // border-bottom:10px solid white;
+}
+.nav-bar{
+  position: absolute;
+  right:0;
+  margin:1rem;
+  width:40vw;
+  height:min-content;
+  display: flex;
   justify-content: space-evenly;
-  margin:none;
+  border-bottom: 1px gray solid;
 
 }
 .nav-bar a{
   text-decoration: none;
   color: white;
+  padding:0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  width:120%;
 }
+.nav-bar a:hover{
+  background-color: white;
+  color:black;
+}
+
 
 
 
@@ -113,8 +162,6 @@
 //     }
 //   }
 // }
-
-
 
 
 @keyframes fadeIn {

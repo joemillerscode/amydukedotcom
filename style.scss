@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgb(0, 0, 0);
-  background-color: #161616;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,70 +13,181 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-*{
-  margin:0px;
+
+* {
+  margin: 0px;
 }
-body{
-  display:flex;
-}
-header{
+
+body {
   display: flex;
 }
-.img-container{
-  overflow:hidden;
-  max-width:40vw;
-  border-right:0.3rem white solid;
+
+.front-page {
+  // display: flex;
+  // border:2px solid black;
+  width: 85vw;
+  height: 85vh;
+  // border-radius: 3rem;
+  overflow: hidden;
+  margin: 5vh auto;
+  box-shadow: 1rem 1rem 10rem black;
 }
-.img-container img{
-  height: 100vh;
+
+.logo {
+  width: 7.5rem;
+  height: 7.5rem;
+  // border-radius: 50%;
+  // clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 20%);
+  // border: solid rgb(0, 0, 0) 20px;
+  // background-color: rgb(40, 110, 176);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  // margin-top:1rem;
+
 }
-.logo{
-  margin:1rem;
-  font-size: 2rem;
-  font-weight: 600;
-  color: white;
-  font-style: italic;
-  border-top:10px solid white;
-  border-bottom:10px solid white;
-  height:min-content;
-}
-.amy{
-  position: relative;
+
+.amy {
+  margin: 0 auto;
   font-weight: 400;
-  // border-top:10px solid white;
-  // border-bottom:10px solid white;
-}
-.duke{
+  font-size: 2.2rem;
   position: relative;
-  font-weight: 900;
-  // border-top:10px solid white;
-  // border-bottom:10px solid white;
+  top: 0.5rem;
 }
-.nav-bar{
-  position: absolute;
-  right:0;
-  margin:1rem;
-  width:40vw;
-  height:min-content;
+
+// .duke{
+//   margin:0 auto; 
+//   font-weight: 900;
+//   font-size: 2.1rem;
+//   position: relative;
+//   bottom:0.5rem;
+
+// }
+.nav-bar {
+  // position: absolute;
+  // right:0;
+  margin: 2rem 0 0 3rem;
+  width: 50vw;
+  height: 5vh;
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 1px gray solid;
-
+  // border-bottom: 1px rgb(167, 167, 167) solid;
 }
-.nav-bar a{
+
+.nav-bar a {
   text-decoration: none;
-  color: white;
-  padding:0.5rem;
+  color: rgb(81, 81, 81);
+  padding: 0.5rem;
   border-radius: 0.5rem 0.5rem 0 0;
-  width:120%;
-}
-.nav-bar a:hover{
-  background-color: white;
-  color:black;
+  width: 120%;
 }
 
+.nav-bar a:hover {
+  // background-color: white;
+  color: rgb(77, 77, 77);
+}
 
+.img-container {
+  text-align: right;
+  // margin-top:1rem;
+}
 
+.img-container img {
+  height: 60vh;
+  position: relative;
+  margin-right: 5rem;
+  // animation: roundTheCorners 5s infinite;
+}
+
+.content-container {
+  display: flex;
+}
+
+.copy-container {
+  padding: 3rem;
+  width: 100%;
+}
+
+.bigDuke {
+  position: relative;
+  top: 20%;
+  font-size: 248px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  letter-spacing: -10px;
+  line-height: 200px;
+}
+
+.bigAmy {
+  display: block;
+  position: relative;
+  top: 35%;
+  // left:4rem;
+  font-size: 48px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.social {
+  text-align: right;
+  padding: 2rem;
+  // margin-right:4rem;
+}
+
+.social a {
+  margin-right: 4rem;
+  text-decoration: none;
+  color: rgb(81, 81, 81);
+
+}
+
+.social a i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.creds {
+  // text-align: center;
+  line-height: 1.8rem;
+}
+
+.creds span {
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+  border-left: 5px solid black;
+  padding-left: 0.5rem;
+  animation: fromTheLeft 5s;
+  // opacity: 0;
+  display: block;
+  animation: fromTheLeft 1s, colorChange 5s, fontSizeChange 6s;
+  animation-fill-mode: forwards;
+
+  &:nth-child(1) {
+    animation-delay: 500ms;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 700ms;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 900ms;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 1100ms;
+  }
+
+  &:nth-child(5) {
+    animation-delay: 1300ms;
+  }
+
+  &:nth-child(6) {
+    animation-delay: 1600ms;
+  }
+}
 
 //on mobile we'll eventually have a nav closed on load and only show the photo gallery background and the hamburger menu button
 
@@ -168,6 +279,7 @@ header{
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -175,11 +287,12 @@ header{
 
 @keyframes fromTheLeft {
   from {
-    opacity: 0;
+    // opacity: 0;
     transform: translateX(-100%);
   }
+
   to {
-    opacity: 1;
+    // opacity: 1;
     transform: translateX(0);
   }
 }
@@ -188,10 +301,28 @@ header{
   0% {
     color: white;
   }
+
   50% {
     color: gold;
   }
+
   100% {
     color: white;
+  }
+}
+
+@keyframes roundTheCorners {
+  0% {
+    border-radius: 0rem;
+  }
+
+  50% {
+    border-radius: 3rem;
+
+  }
+
+  100% {
+    border-radius: 0rem;
+
   }
 }

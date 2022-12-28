@@ -14,90 +14,62 @@
   -webkit-text-size-adjust: 100%;
 }
 
-* {
-  margin: 0px;
-}
-
 body {
   display: flex;
 }
 
 .front-page {
-  // display: flex;
-  // border:2px solid black;
   width: 85vw;
   height: 85vh;
-  // border-radius: 3rem;
   overflow: hidden;
   margin: 5vh auto;
   box-shadow: 1rem 1rem 10rem black;
+  border-radius: 2rem;
 }
 
-.logo {
-  width: 7.5rem;
-  height: 7.5rem;
-  // border-radius: 50%;
-  // clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 20%);
-  // border: solid rgb(0, 0, 0) 20px;
-  // background-color: rgb(40, 110, 176);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 2rem;
-  // margin-top:1rem;
-
-}
-
-.amy {
-  margin: 0 auto;
-  font-weight: 400;
-  font-size: 2.2rem;
-  position: relative;
-  top: 0.5rem;
-}
-
-// .duke{
-//   margin:0 auto; 
-//   font-weight: 900;
-//   font-size: 2.1rem;
-//   position: relative;
-//   bottom:0.5rem;
-
-// }
 .nav-bar {
-  // position: absolute;
-  // right:0;
   margin: 2rem 0 0 3rem;
   width: 50vw;
   height: 5vh;
   display: flex;
   justify-content: space-evenly;
-  // border-bottom: 1px rgb(167, 167, 167) solid;
 }
 
-.nav-bar a {
+a {
   text-decoration: none;
-  color: rgb(81, 81, 81);
-  padding: 0.5rem;
+  color: rgb(71, 71, 71);
   border-radius: 0.5rem 0.5rem 0 0;
-  width: 120%;
 }
 
-.nav-bar a:hover {
-  // background-color: white;
-  color: rgb(77, 77, 77);
+a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.social {
+  margin-right: 8rem;
+  text-align: right;
+  padding: 2rem;
+}
+
+.social a {
+  margin-left: 5rem;
+}
+
+.social a i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
 }
 
 .img-container {
   text-align: right;
-  // margin-top:1rem;
 }
 
 .img-container img {
-  height: 60vh;
+  height: 65vh;
   position: relative;
   margin-right: 5rem;
-  // animation: roundTheCorners 5s infinite;
+  border-radius: 2rem;
 }
 
 .content-container {
@@ -107,173 +79,100 @@ body {
 .copy-container {
   padding: 3rem;
   width: 100%;
+  margin-left: 3rem;
+  margin-right: 5rem;
+
 }
 
 .bigDuke {
   position: relative;
-  top: 20%;
+  top: 10%;
+  left: 3rem;
   font-size: 248px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 900;
   letter-spacing: -10px;
   line-height: 200px;
+  display:flex;
 }
 
 .bigAmy {
   display: block;
   position: relative;
-  top: 35%;
-  // left:4rem;
+  top: 25%;
+  left: 2rem;
   font-size: 48px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 900;
   letter-spacing: -2px;
-}
+  display:flex;
+  // justify-content: flex-end;
+  // flex-direction: column;
 
-.social {
-  text-align: right;
-  padding: 2rem;
-  // margin-right:4rem;
-}
-
-.social a {
-  margin-right: 4rem;
-  text-decoration: none;
-  color: rgb(81, 81, 81);
-
-}
-
-.social a i {
-  margin-right: 0.5rem;
-  font-size: 1rem;
 }
 
 .creds {
-  // text-align: center;
   line-height: 1.8rem;
+  text-align: right;
+  font-weight: 600;
+  // margin-top: 6rem;
+  // margin-left: 3rem;
+  // font-family:;
+  color: rgb(87, 87, 87);
+  margin-left:10rem;
+
+  .stats{
+    display:flex;
+    justify-content: center;
+    margin-bottom:2rem;
+    span{
+      font-size: 2.5rem;
+      &:nth-child(2){
+        margin-left:2rem;
+        // margin-right:-0.2rem;
+      }
+    }
+  }
+
+  span {
+    display: block;
+    // color: black;
+   
+    // &:nth-child(1) {
+    //   animation-delay: 500ms;
+    //   margin-left:0.5rem;
+    // }
+
+    // &:nth-child(2) {
+    //   animation-delay: 700ms;
+    //   margin-left:1rem;
+
+    // }
+
+    // &:nth-child(3) {
+    //   animation-delay: 900ms;
+    //   margin-left:1.5rem;
+
+    // }
+
+    // &:nth-child(4) {
+    //   animation-delay: 1100ms;
+    //   margin-left:2rem;
+
+    // }
+
+    // &:nth-child(5) {
+    //   animation-delay: 1300ms;
+    //   margin-left:2.5rem;
+    // }
+
+    // &:nth-child(6) {
+    //   animation-delay: 1600ms;
+    //   margin-left:3rem;
+
+    // }
+  }
 }
-
-.creds span {
-  font-weight: 900;
-  font-family: 'Times New Roman', Times, serif;
-  border-left: 5px solid black;
-  padding-left: 0.5rem;
-  animation: fromTheLeft 5s;
-  // opacity: 0;
-  display: block;
-  animation: fromTheLeft 1s, colorChange 5s, fontSizeChange 6s;
-  animation-fill-mode: forwards;
-
-  &:nth-child(1) {
-    animation-delay: 500ms;
-  }
-
-  &:nth-child(2) {
-    animation-delay: 700ms;
-  }
-
-  &:nth-child(3) {
-    animation-delay: 900ms;
-  }
-
-  &:nth-child(4) {
-    animation-delay: 1100ms;
-  }
-
-  &:nth-child(5) {
-    animation-delay: 1300ms;
-  }
-
-  &:nth-child(6) {
-    animation-delay: 1600ms;
-  }
-}
-
-//on mobile we'll eventually have a nav closed on load and only show the photo gallery background and the hamburger menu button
-
-
-// @media screen and (max-width: 500px) {
-//   body{
-//     background-image:url('./img/111.jpg') ;
-//     background-position: -5rem ;
-//     background-size:cover;
-//     height:100vh;
-//     background-repeat: no-repeat;
-//   }
-//   .circle{
-//     width:8.5rem;
-//     height:8.5rem;
-//     border: solid white 2px;
-//     border-radius: 50%;
-//     background-color: rgb(40, 110, 176);
-//     position: absolute; 
-//     right:2rem;
-//     top:2rem;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//   }
-//   .amy{
-//     position: relative;
-//     // bottom:.75rem;
-//     left:1rem;
-//   }
-//   .duke{
-//     position: relative;
-//     top:1.5rem;
-//     right:3rem;
-//   }
-//   .circle h3{
-//     font-size: 0.5rem;
-//     position: relative;
-//     bottom:0.5rem;
-//     left:0.8rem;
-//   }
-
-//   .creds{
-//       // clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
-//     // clip-path: polygon(0% 0%,60% 100%, 100% 100%, 100% 0, 0 0);
-//     margin:0;
-//     border: 2px solid white;
-//     position: relative;
-//     top:15rem;
-//     left:10%;
-//     padding:1rem;
-//     font-weight:600;
-//     text-align: right;
-//     font-size: 0.8rem;
-//     width:75%;
-//     background-color: rgba(0, 0, 0, 0.614);
-//     padding:1rem;
-//     animation: fadeIn 3s;
-//     span {
-//       opacity: 0;
-//       display: block;
-//       animation: fromTheLeft 1s, colorChange 5s, fontSizeChange 6s;
-//       animation-fill-mode: forwards;
-//       // color: gold;
-//       &:nth-child(1) {
-//         animation-delay: 500ms;
-//       }
-//       &:nth-child(2) {
-//         animation-delay: 700ms;
-//       }
-//       &:nth-child(3) {
-//         animation-delay: 900ms;
-//       }
-//       &:nth-child(4) {
-//         animation-delay: 1100ms;
-//       }
-//       &:nth-child(5) {
-//         animation-delay: 1300ms;
-//       }
-//       &:nth-child(6) {
-//         animation-delay: 1600ms;
-//       }
-//     }
-//   }
-// }
-
 
 @keyframes fadeIn {
   from {
@@ -288,7 +187,7 @@ body {
 @keyframes fromTheLeft {
   from {
     // opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-3%);
   }
 
   to {
@@ -297,32 +196,3 @@ body {
   }
 }
 
-@keyframes colorChange {
-  0% {
-    color: white;
-  }
-
-  50% {
-    color: gold;
-  }
-
-  100% {
-    color: white;
-  }
-}
-
-@keyframes roundTheCorners {
-  0% {
-    border-radius: 0rem;
-  }
-
-  50% {
-    border-radius: 3rem;
-
-  }
-
-  100% {
-    border-radius: 0rem;
-
-  }
-}

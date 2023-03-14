@@ -93,7 +93,7 @@ a:hover {
   font-weight: 900;
   letter-spacing: -10px;
   line-height: 200px;
-  display:flex;
+  display: flex;
 }
 
 .bigAmy {
@@ -105,73 +105,87 @@ a:hover {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 900;
   letter-spacing: -2px;
-  display:flex;
+  display: flex;
   // justify-content: flex-end;
   // flex-direction: column;
 
 }
 
 .creds {
-  line-height: 1.8rem;
-  text-align: right;
-  font-weight: 600;
-  // margin-top: 6rem;
-  // margin-left: 3rem;
-  // font-family:;
-  color: rgb(87, 87, 87);
-  margin-left:10rem;
-
-  .stats{
-    display:flex;
-    justify-content: center;
-    margin-bottom:2rem;
-    span{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  .stats {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    // margin-left: 3rem;
+    // margin-bottom: 2rem;
+    padding-right:2.5rem;
+    span {
       font-size: 2.5rem;
-      &:nth-child(2){
-        margin-left:2rem;
-        // margin-right:-0.2rem;
+    }
+    div{
+      p{
+        margin:0;
+        margin-top:-0.5rem;
+        margin-left:0.5rem;
       }
     }
   }
-
-  span {
-    display: block;
-    // color: black;
-   
-    // &:nth-child(1) {
-    //   animation-delay: 500ms;
-    //   margin-left:0.5rem;
-    // }
-
-    // &:nth-child(2) {
-    //   animation-delay: 700ms;
-    //   margin-left:1rem;
-
-    // }
-
-    // &:nth-child(3) {
-    //   animation-delay: 900ms;
-    //   margin-left:1.5rem;
-
-    // }
-
-    // &:nth-child(4) {
-    //   animation-delay: 1100ms;
-    //   margin-left:2rem;
-
-    // }
-
-    // &:nth-child(5) {
-    //   animation-delay: 1300ms;
-    //   margin-left:2.5rem;
-    // }
-
-    // &:nth-child(6) {
-    //   animation-delay: 1600ms;
-    //   margin-left:3rem;
-
-    // }
+  .titles{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left:2.5rem;
+    line-height: 2rem;
+    border-left:solid black 5px;
+    font-weight: 500;
   }
+
+  // span {
+  //   display: block;
+  //   color: black;
+
+  //   &:nth-child(1) {
+      
+  //     margin-left:0.5rem;
+  //   }
+
+  //   &:nth-child(2) {
+      
+  //     margin-left:1rem;
+
+  //   }
+
+  //   &:nth-child(3) {
+      
+  //     margin-left:2rem;
+
+  //   }
+
+  //   &:nth-child(4) {
+      
+  //     margin-left:3rem;
+
+  //   }
+
+  //   &:nth-child(5) {
+      
+  //     margin-left:4rem;
+  //   }
+
+  //   &:nth-child(6) {
+      
+  //     margin-left:5rem;
+
+  //   }
+  //   &:nth-child(7) {
+      
+  //     margin-left:6rem;
+
+  //   }
+  // }
 }
 
 @keyframes fadeIn {
@@ -195,4 +209,3 @@ a:hover {
     transform: translateX(0);
   }
 }
-

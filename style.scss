@@ -273,6 +273,7 @@ a:hover {
     overflow: scroll;
     margin: 0.5rem auto;
   }
+
   .nav-bar {
     margin: 1rem 0;
 
@@ -284,30 +285,34 @@ a:hover {
   }
 
   .aDuke {
-    bottom:5rem;
-    // margin: auto;
-    // width:100%;
+    bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+
     .bigAmy {
-      top: 5rem;
-      left:3.5rem;
+      top: 4.6rem;
+      left: 4.5rem;
     }
+
     .bigDuke {
-      left: 4rem;
+      left: 4.5rem;
     }
-  
+
   }
 
-  .creds{
+  .creds {
     position: relative;
-    bottom:8rem;
-    width:100%;
+    bottom: 8rem;
+    width: 100%;
   }
-  .titles{
+
+  .titles {
     display: none !important;
   }
-  .copy-container{
+
+  .copy-container {
     flex-direction: column-reverse;
-    order:2;
+    order: 2;
     justify-content: flex-start;
   }
 

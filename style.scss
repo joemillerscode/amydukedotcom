@@ -70,11 +70,12 @@ a:hover {
 
 .img-container {
   text-align: right;
+  max-height: 65%;
 }
 
 .img-container img {
-  max-height: 65vh;
-  position: relative;
+  max-height: 60vh;
+  // position: relative;
   margin-right: 5rem;
   border-radius: 2rem;
 }
@@ -187,36 +188,36 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 1282px) {
-  .creds .titles {
-    font-size: .9rem;
-    padding-left: 1rem;
+// @media only screen and (max-width: 1282px) {
+//   .creds .titles {
+//     font-size: .9rem;
+//     padding-left: 1rem;
 
-  }
+//   }
 
-  .creds .stats {
-    padding-right: 1rem;
-  }
+//   .creds .stats {
+//     padding-right: 1rem;
+//   }
 
-  .aDuke {
-    .bigDuke {
-      font-size: 200px;
+//   .aDuke {
+//     .bigDuke {
+//       font-size: 200px;
 
-    }
+//     }
 
-    .bigAmy {
-      font-size: 36px;
-      left: 2.2rem;
-      top: 6.5rem;
-      font-weight: 900;
-      letter-spacing: -2px;
+//     .bigAmy {
+//       font-size: 36px;
+//       left: 2.2rem;
+//       top: 6.5rem;
+//       font-weight: 900;
+//       letter-spacing: -2px;
 
-    }
-  }
+//     }
+//   }
 
-}
+// }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1000px) {
   .nav-bar {
     margin: 2rem 0 0 0;
     width: 80vw;
@@ -266,7 +267,7 @@ a:hover {
 
 }
 
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 600px) {
   .front-page {
     width: 95vw;
     height: 95vh;
@@ -337,10 +338,7 @@ a:hover {
     margin-left: 1rem;
   }
 
-  // .social a i {
-  //   margin-right: 0.5rem;
-  //   font-size: 1rem;
-  // }
+
 }
 
 

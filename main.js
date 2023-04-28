@@ -1,4 +1,4 @@
-import './style.scss'
+import './styles.scss'
 const images = import.meta.glob('./img/*.jpg')
 
 // import { initializeApp } from "firebase/app";

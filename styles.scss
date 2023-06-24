@@ -74,48 +74,55 @@ a:hover {
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  padding-right:5rem;
+  padding-right: 5rem;
 }
 
 .creds {
   display: flex;
   margin-top: 2rem;
   justify-content: center;
+  flex-direction: column;
 
-  .stats {
+  .creds-container {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    padding-right: 1.5rem;
+    min-width: max-content;
 
-    span {
-      font-size: 2.5rem;
-    }
+    .stats {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding-right: 1.5rem;
 
-    div {
-      p {
-        margin: 0;
-        margin-top: -0.5rem;
-        margin-left: 0.5rem;
+      span {
+        font-size: 2.5rem;
+      }
+
+      div {
+        p {
+          margin: 0;
+          margin-top: -0.5rem;
+          margin-left: 0.5rem;
+        }
       }
     }
+
+    .titles {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding-left: 2.5rem;
+      line-height: 2rem;
+      border-left: solid black 5px;
+      font-weight: 500;
+    }
   }
 
-  .titles {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    padding-left: 2.5rem;
-    line-height: 2rem;
-    border-left: solid black 5px;
-    font-weight: 500;
-  }
 
 }
 
 .aDuke {
   position: relative;
-  right: 5rem;
+  right: 4rem;
 
   .bigDuke {
     position: relative;
@@ -126,7 +133,6 @@ a:hover {
     font-weight: 900;
     letter-spacing: -10px;
     line-height: 200px;
-    display: flex;
   }
 
   .bigAmy {
@@ -138,7 +144,6 @@ a:hover {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
     letter-spacing: -2px;
-    display: flex;
   }
 }
 
@@ -164,35 +169,61 @@ a:hover {
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
 
-  .content-container{
-    flex-direction: column-reverse;
-    overflow: scroll;
+
+@media only screen and (max-width:1170px) {
+  .aDuke{
+    scale: 0.8;
+    right: 0rem;
+  }
+  .copy-container{
+    padding-right: 3rem;
   }
 
-  .copy-container {
-    flex-direction: column-reverse;
-    order: 2;
-    justify-content: flex-start;
-  }
-
-  .aDuke {
-    bottom: 5rem;
-    justify-content: center;
-    align-items: center;
-    
-    .bigAmy {
-      top: 4.6rem;
-      left: 4.5rem;
-      // font-size: 56px;
+  .creds{
+    margin-top: 0;
+    .creds-container{
+      display: block;
+      .stats{
+        flex-direction: row;
+      }
+      .titles{
+        border-left: none;
+        border-top: solid black 5px;
+      }
     }
-
-    .bigDuke {
-      left: 4.5rem;
-      font-size: 156px;
-    }
-
   }
-
 }
+
+// @media only screen and (max-width: 600px) {
+
+//   .content-container {
+//     flex-direction: column-reverse;
+//     overflow: scroll;
+//   }
+
+//   .copy-container {
+//     flex-direction: column-reverse;
+//     order: 2;
+//     justify-content: flex-start;
+//   }
+
+//   .aDuke {
+//     bottom: 5rem;
+//     justify-content: center;
+//     align-items: center;
+
+//     .bigAmy {
+//       top: 4.6rem;
+//       left: 4.5rem;
+//       // font-size: 56px;
+//     }
+
+//     .bigDuke {
+//       left: 4.5rem;
+//       font-size: 156px;
+//     }
+
+//   }
+
+// }

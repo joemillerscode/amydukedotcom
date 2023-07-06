@@ -40,6 +40,9 @@ a:hover {
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  height: 80vh;
+  width:82vw;
 }
 
 .nav-bar {
@@ -52,21 +55,27 @@ a:hover {
 
 .content-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .img-container {
-  text-align: right;
+  width:500px;
+  
+}
+.img-holder {
+  background-image: url('./img/111.jpg');
   height: 65vh;
-  margin-right: 1rem;
+  background-position: center; 
+  border-radius: 2rem;
+  background-size: cover ;
 }
 
 .img-container img {
-  height: 100%;
-  width: 100;
-  object-fit: cover;
-  border-radius: 2rem;
+  // height: 100%;
+  // min-width: 100;
+  // object-fit: cover;
+  // border-radius: 2rem;
 }
 
 .copy-container {
@@ -171,59 +180,146 @@ a:hover {
 
 
 
-@media only screen and (max-width:1170px) {
-  .aDuke{
-    scale: 0.8;
-    right: 0rem;
+@media screen and (max-width: 1320px) {
+
+
+  .main-container {
+    /* CSS rules for main container on smaller screens */
+    /* ... */
+    padding:0 2rem;
   }
-  .copy-container{
-    padding-right: 3rem;
+
+  .pro-fighter{
+    position: relative;
+    left: 2rem;
+  }
+  .aDuke{
+    right:2rem;
+  }
+
+  .copy-container {
+    padding-right:2rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .aDuke{
+    right:2rem;
+    .bigDuke {
+      font-size: 200px;
+      line-height: 150px;
+    }
+  
+    .bigAmy {
+      font-size: 36px;
+    }
   }
 
   .creds{
-    margin-top: 0;
     .creds-container{
-      display: block;
+      display: inline;
       .stats{
         flex-direction: row;
+        margin-bottom: 1rem;
       }
       .titles{
         border-left: none;
         border-top: solid black 5px;
+        padding-top: 1rem;
       }
+    }
+  }
+
+}
+
+@media screen and (max-width: 960px) {
+
+  .creds{
+    font-size: 0.8rem;
+    // scale: 0.8;
+  }
+  .aDuke{
+    right:1rem;
+    .bigDuke {
+      font-size: 150px;
+      line-height: 100px;
+    }
+    .bigAmy {
+      font-size: 30px;
+      top:3rem;
     }
   }
 }
 
-// @media only screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
+  .main-container{
+    overflow: scroll;
+    height: 98vh;
+  }
+  .content-container{
+    flex-direction: column;
+  }
+  .img-container{
+    // width:100%;
+    height: 60vh;
+    .img-holder{
+      height: 100%;
+    }
+  }
+  // .aDuke{
+  //   right:2rem;
+  //   .bigDuke {
+  //     font-size: 100px;
+  //     line-height: 80px;
+  //   }
+  //   .bigAmy {
+  //     font-size: 18px;
+  //   }
+  // }
+  .creds{
+    margin-top:0;
+    margin-bottom:2rem;
+    .creds-container{
+      .titles{
+        span{
+          display: none;
+        }
+      }
+    }
 
-//   .content-container {
-//     flex-direction: column-reverse;
-//     overflow: scroll;
-//   }
+  }
+}
+@media screen and (max-width: 620px) {
+  .social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin-right: 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  .nav-bar{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    /* CSS rules for screens up to 320px width */
+    /* ... */
+  }
 
-//   .copy-container {
-//     flex-direction: column-reverse;
-//     order: 2;
-//     justify-content: flex-start;
-//   }
+  .main-container {
+    /* CSS rules for main container on even smaller screens */
+    /* ... */
+  }
 
-//   .aDuke {
-//     bottom: 5rem;
-//     justify-content: center;
-//     align-items: center;
+  .img-container {
+    /* CSS rules for image container on even smaller screens */
+    /* ... */
+  }
 
-//     .bigAmy {
-//       top: 4.6rem;
-//       left: 4.5rem;
-//       // font-size: 56px;
-//     }
-
-//     .bigDuke {
-//       left: 4.5rem;
-//       font-size: 156px;
-//     }
-
-//   }
-
-// }
+  .copy-container {
+    /* CSS rules for copy container on even smaller screens */
+    /* ... */
+  }
+}

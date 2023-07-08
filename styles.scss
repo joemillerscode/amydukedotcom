@@ -79,16 +79,17 @@ body {
 	padding-right: 5rem;
 }
 
-.img-container {
-  height: 100%;
-  // width: fit-content;
-}
-.img-container img{
-  border-radius: 2rem;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+// .img-container {
+//   height: 100%;
+//   width: 300px;
+// }
+
+// .img-container img{
+//   border-radius: 2rem;
+//   width: 100%;
+//   height: 65vh;
+//   object-fit: cover;
+// }
 
 .aDuke {
   position: relative;
@@ -204,7 +205,7 @@ body {
 //   }
 
 // }
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 640px) {
   :root {
     --primary-font-size: 0.8rem;
     --secondary-font-size: 0.8rem;
@@ -216,7 +217,7 @@ body {
     // padding:1rem;
     height: 50px;
     width: 50px;
-    top: 20px;
+    top: 2rem;
     right: 20px;
     cursor: pointer;
     z-index: 9999;
@@ -231,6 +232,7 @@ body {
   }
   
   .menu {
+    all: unset;
     position: fixed;
     top: -100%;
     right: 0;
@@ -244,6 +246,7 @@ body {
   }
   
   .menu ul {
+    all: unset;
     list-style-type: none;
     padding: 0;
     margin: 30px 30px;
@@ -318,6 +321,7 @@ body {
   }
 
   .img-container {
+    // position: absolute;
     height: 100vh;
 
     img {
@@ -393,4 +397,10 @@ body {
     }
   }
 
+}
+@media screen and (max-height: 430px) {
+ 
+  .img-container img{
+    height: 170%;
+  }
 }

@@ -1,27 +1,27 @@
 :root {
-  --primary-color: #f5f5f5;
-  --secondary-color: #f5f5f5;
-  --tertiary-color: #f5f5f5;
-
-  --primary-font: 'Roboto', sans-serif;
-  --secondary-font: 'Roboto', sans-serif;
-  --tertiary-font: 'Roboto', sans-serif;
-
-  --primary-font-size: 1rem;
-  --secondary-font-size: 1rem;
-  --tertiary-font-size: 1rem;
-
-  --primary-font-weight: 400;
-  --secondary-font-weight: 400;
-  --tertiary-font-weight: 400;
-
-  --primary-line-height: 1.5;
-  --secondary-line-height: 1.5
+  font-family: Inter,Avenir,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
 }
 
 .menu {
-  // position: relative;
-  // bottom:3rem;
+  position: sticky;
+  top: 5rem;
+  z-index: 100;
 }
 
 .menu ul {
@@ -35,45 +35,31 @@
 
 }
 
+.menu ul li a {
+  color: rgba(0, 0, 0, 0.469);
+  text-decoration: none;
+  font-size: 1.1rem;
+
+}
+
+.menu ul li a:hover {
+  color: #0000003e;
+
+}
+
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
   height: 99vh;
   width: 99vw;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .menu-toggle {
   display: none;
-}
-
-.menu {
-  position: sticky;
-  top: 5rem;
-  z-index: 100;
-}
-.menu ul{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
-}
-
-.menu ul li a{
-  color: black;
-  text-decoration: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.1rem;
-
-}
-.menu ul li a:hover{
-  color: #0000003e;
-
 }
 
 .main-container {
@@ -98,7 +84,7 @@ body {
 
 .copy-container {
   display: flex;
-  // justify-content: space-evenly;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   height: 100%;
@@ -129,75 +115,65 @@ body {
   position: relative;
   height: 100%;
 
-  .aduke-container{
+  .aduke-container {
     order: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    bottom:5rem;
-    left:1rem;
+    bottom: 5rem;
+    left: 0;
     background-image: linear-gradient(to right, #f5f5f5 50%, rgba(0, 131, 179, 0));
-    // border-radius: 2rem;
-    // margin:1rem;
-    padding:0 3rem;
-    .aDuke {
+    padding: 0 3rem;
 
+    .aDuke {
       .bigDuke {
         position: relative;
-        // top: 10%;
-        // left: 3rem;
-        font-size: 188px;
+        font-size: 23vw;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 900;
         letter-spacing: -10px;
         line-height: 120px;
       }
-  
+
       .bigAmy {
         display: block;
         position: relative;
         top: 3rem;
-        right:1rem;
-        font-size: 36px;
+        right: 1rem;
+        font-size: 6vw;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 900;
         letter-spacing: -2px;
       }
     }
+
     .pro-fighter {
-      border-top: 2px solid black;
+      // border-top: 2px solid black;
       text-align: center;
       width: fit-content;
       // background-color: rgba(255, 255, 255, 0.348);
       // border-radius: 2rem;
       font-weight: 500;
 
-    } 
+    }
   }
 
-  .stats-titles-container{
+  .stats-titles-container {
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    // justify-content: space-evenly;
+    height: 40%;
     position: relative;
-    top:5rem;
-    background-color: rgba(0, 131, 179, 0);
-    padding:2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    .stats{
+    top: 6rem;
+    .stats {
       display: flex;
+      flex-direction: column;
       justify-content: space-evenly;
-      width: 100%;
-      border-bottom:2px solid black ;
-      padding:1rem;
-      // margin: 1rem;
-      position: relative;
-      right: 2rem;
-  
+
       span {
         font-size: 2.5rem;
       }
+
       div {
         p {
           margin: 0;
@@ -206,14 +182,16 @@ body {
         }
       }
     }
-    .titles{
+
+    .titles {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-  
-      span {
-        margin-top: 1rem;
-      }
+      height: 100%;
+      justify-content: space-evenly;
+      border-left: 5px solid black;
+      margin: 1rem;
+      padding-left: 1rem;
+      min-width: max-content;
     }
 
   }
@@ -226,11 +204,35 @@ body {
 
 // ------media queries------
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width:1024px) {
+  .creds {
+    .stats-titles-container {
+      flex-direction: column;
+
+      .stats {
+        flex-direction: row;
+      }
+
+      .titles {
+        border-left: unset;
+        border-top: 5px solid black;
+        padding-top: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
   :root {
     --primary-font-size: 0.8rem;
     --secondary-font-size: 0.8rem;
     --tertiary-font-size: 0.8rem;
+
+  }
+  body {
+    all: unset;
+    margin: 0;
+    padding: 0;
   }
 
   .menu-toggle {
@@ -275,7 +277,6 @@ body {
   }
 
   .menu ul li {
-    font-family: 'Courier New', Courier, monospace;
     position: relative;
     right: 3rem;
     padding: 0.5rem;
@@ -329,13 +330,6 @@ body {
     top: 10px;
   }
 
-  body {
-    all: unset;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-
   .main-container {
     all: unset;
   }
@@ -376,15 +370,15 @@ body {
       color: black;
 
 
-      .aduke-container{
-        order:unset;
+      .aduke-container {
+        order: unset;
         position: unset;
-        background-image:unset;
+        background-image: unset;
 
         .aDuke {
           color: #000000;
           right: 0;
-  
+
           .bigDuke {
             font-size: 126px;
             font-weight: 900;
@@ -392,35 +386,33 @@ body {
             letter-spacing: -8px;
             left: 0;
           }
-  
+
           .bigAmy {
             font-size: 36px;
             left: -1.1rem;
             top: 2.8rem;
           }
         }
+
         .pro-fighter {
           border-top: 2px solid black;
           display: table;
           margin: 0 auto;
         }
       }
-      .stats-titles-container{
-        top:unset;
-        padding:unset;
+
+      .stats-titles-container {
+        top: unset;
+        padding: unset;
+        width:50%;
         .stats {
           display: flex;
-          padding-top: 1rem;
-          justify-content: space-evenly;
-          width: 75%;
+          justify-content: space-between;
           border-bottom: none;
-          right:unset;
-  
-  
           span {
             font-size: 2.5rem;
           }
-  
+
           div {
             p {
               margin: 0;
@@ -429,7 +421,7 @@ body {
             }
           }
         }
-  
+
         .titles {
           display: none;
         }

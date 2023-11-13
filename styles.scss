@@ -79,7 +79,7 @@ body {
 
   .socials {
     position: absolute;
-    bottom: -1rem;
+    bottom: 0rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -266,19 +266,11 @@ body {
 }
 
 @media screen and (max-width: 880px) {
-  //   :root {
-  //   --primary-font-size: 0.8rem;
-  //   --secondary-font-size: 0.8rem;
-  //   --tertiary-font-size: 0.8rem;
-
-  // }
 
   .img-container {
-    // height: 90%;
     position: relative;
     bottom: 1rem;
   }
-
 
   .menu-toggle {
     position: absolute;
@@ -305,10 +297,8 @@ body {
     top: -100%;
     right: 0;
     width: 100%;
-    // height: 100%;
     border-radius: 0 0 20% 0;
     background-color: rgba(255, 255, 255, 0.845);
-    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.598);
     z-index: 999;
     transition: top 0.3s ease-in-out;
   }
@@ -380,6 +370,12 @@ body {
 
     .aduke-container {
       bottom: 2rem;
+
+      .aDuke {
+        .bigAmy {
+          top: 3.2rem;
+        }
+      }
     }
 
     .stats-titles-container {
@@ -393,11 +389,13 @@ body {
   .main-container {
     .socials {
       justify-content: left;
-      .link-container{
-        a{
+      margin-left: 1rem;
+
+      .link-container {
+        a {
           margin-right: 1rem;
         }
-      
+
       }
     }
   }
@@ -407,12 +405,16 @@ body {
 
 @media screen and (max-width: 500px) {
   .main-container {
+    .creds .aduke-container .aDuke .bigDuke {
+      letter-spacing: -7px;
+
+    }
+
     .socials {
-      .link-container{
-        a{
+      .link-container {
+        a {
           margin-right: 1rem;
         }
-      
       }
     }
   }
@@ -421,8 +423,16 @@ body {
 }
 
 
-@media screen and (max-height: 600px) {
 
+//////////////////////////
+@media screen and (max-height: 800px) {
+  .creds .stats-titles-container {
+    display: none;
+    // visibility: hidden;
+  }
+}
+
+@media screen and (max-height: 600px) {
   .creds .stats-titles-container {
     display: none;
   }
@@ -430,13 +440,11 @@ body {
   .content-container {
     justify-content: space-between;
 
-    // width: 100%;
     .aduke-container {
       padding: 0 1rem;
     }
 
     .socials {
-
       a {
         margin-left: 2rem;
       }

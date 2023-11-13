@@ -20,7 +20,7 @@
 
 .menu {
   position: relative;
-  top:1rem;
+  top: 1.5rem;
   z-index: 100;
 }
 
@@ -76,6 +76,39 @@ body {
   height: 90%;
   width: 80%;
   position: relative;
+
+  .socials {
+    position: absolute;
+    bottom: -1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+    padding: 1rem;
+
+    .link-container {
+
+      a {
+        color: rgba(0, 0, 0, 0.469);
+        margin-right: 5rem;
+
+      }
+
+      a i {
+        margin-right: 0.5rem;
+        font-size: 1.5rem;
+        position: relative;
+        top: 0.3rem;
+      }
+    }
+
+
+    .photoCred {
+      font-size: 0.8rem;
+      color: #000000;
+    }
+
+  }
 }
 
 .content-container {
@@ -90,26 +123,6 @@ body {
 
 }
 
-.socials {
-  position: absolute;
-  bottom: 2rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  z-index: 1;
-}
-
-.socials a {
-  color: rgba(0, 0, 0, 0.469);
-}
-
-.socials a i {
-  margin-right: 0.5rem;
-  font-size: 1.5rem;
-  position: relative;
-  top: 0.3rem;
-}
-
 .copy-container {
   display: flex;
   justify-content: space-evenly;
@@ -118,7 +131,6 @@ body {
   height: 100%;
   max-width: 60%;
   padding-top: calc(33.33% / 2);
-  // border:#0000001f solid 1px;
 
 }
 
@@ -138,21 +150,6 @@ body {
   border-radius: 2rem;
 }
 
-.photoCred {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 0.8rem;
-  color: #000000;
-  // background-color: rgba(255, 255, 255, 0.223);
-  padding: 0.5rem;
-  border-radius: 1rem 0 0 0.3rem;
-}
-
-.photoCred a {
-  // color: white;
-}
-
 .creds {
   display: flex;
   flex-direction: column;
@@ -160,13 +157,12 @@ body {
   position: relative;
   height: 100%;
 
-  // border:#0000001f solid 1px;
-
   .aduke-container {
     order: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: space-evenly;
     position: absolute;
     bottom: 8rem;
     left: 0;
@@ -198,24 +194,21 @@ body {
     }
 
     .pro-fighter {
-      // border-top: 2px solid black;
       text-align: center;
       width: fit-content;
-      // background-color: rgba(255, 255, 255, 0.348);
-      // border-radius: 2rem;
       font-weight: 500;
-
+      margin-bottom: 2rem;
     }
   }
 
   .stats-titles-container {
     display: flex;
-    margin-top:10%;
+    margin-top: 10%;
 
     .stats {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly; 
+      justify-content: space-evenly;
 
       span {
         font-size: 2.5rem;
@@ -248,6 +241,12 @@ body {
 // ------media queries------
 
 @media screen and (max-width:1024px) {
+  .main-container {
+    .socials {
+      left: 0rem;
+    }
+  }
+
   .creds {
 
     .stats-titles-container {
@@ -266,7 +265,7 @@ body {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
   //   :root {
   //   --primary-font-size: 0.8rem;
   //   --secondary-font-size: 0.8rem;
@@ -275,23 +274,11 @@ body {
   // }
 
   .img-container {
-    height: 90%;
+    // height: 90%;
     position: relative;
     bottom: 1rem;
   }
 
-  .socials {
-    // background-color: white;
-    display: flex;
-    justify-content: left;
-
-    // height: 3rem;
-    // background-image: linear-gradient(to right, #f5f5f5 40%, rgba(0, 131, 179, 0));
-
-    a {
-      margin-left: 1rem;
-    }
-  }
 
   .menu-toggle {
     position: absolute;
@@ -390,8 +377,9 @@ body {
 
   .creds {
     position: unset;
-    .aduke-container{
-      bottom:2rem;
+
+    .aduke-container {
+      bottom: 2rem;
     }
 
     .stats-titles-container {
@@ -401,25 +389,42 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
-  .creds .stats-titles-container {
-
-  }
-
-  .content-container {
-
-    .aduke-container {
-      padding: 1rem;
+@media screen and (max-width: 660px) {
+  .main-container {
+    .socials {
+      justify-content: left;
+      .link-container{
+        a{
+          margin-right: 1rem;
+        }
+      
+      }
     }
-
   }
+
+
+}
+
+@media screen and (max-width: 500px) {
+  .main-container {
+    .socials {
+      .link-container{
+        a{
+          margin-right: 1rem;
+        }
+      
+      }
+    }
+  }
+
+
 }
 
 
 @media screen and (max-height: 600px) {
 
   .creds .stats-titles-container {
-    display:none;
+    display: none;
   }
 
   .content-container {
@@ -431,11 +436,9 @@ body {
     }
 
     .socials {
-      // flex-direction: column;
-      // width: 40%;
-      justify-content: left;
-      a{
-        margin-left:2rem;
+
+      a {
+        margin-left: 2rem;
       }
     }
   }

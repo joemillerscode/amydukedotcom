@@ -207,7 +207,7 @@ body {
     // margin-top: 10%;
     min-width: max-content;
     flex-direction: column;
-    padding: 0 2rem;
+    padding: 0 3rem;
 
     .stats {
       display: flex;
@@ -236,30 +236,46 @@ body {
     .award-container {
       display: flex;
       flex-direction: column;
+    
       .award {
         border-radius: 0.6rem;
-        padding:1rem;
+        padding: 1rem;
         cursor: pointer;
+        position: relative; /* Needed for positioning the pseudo-element */
+    
         h3 {
-          // margin-top: 1rem;
           margin: 0;
         }
-
+    
         p {
           margin: 0;
           margin-left: 1rem;
-
+        }
+    
+        /* Add the arrow as a pseudo-element */
+        &::after {
+          content: '>'; /* This is the arrow symbol */
+          position: absolute;
+          right: 10px; /* Position it to the right */
+          top: 50%; /* Center it vertically */
+          transform: translateY(-50%);
+          opacity: 0; /* Start invisible */
+          transition: opacity 0.3s ease; /* Smooth transition for the fade effect */
+        }
+    
+        &:hover {
+          scale: 1.035;
+          font-weight: 600;
+          background-color: #00000010;
+    
+          /* Make the arrow visible on hover */
+          &::after {
+            opacity: 1;
+          }
         }
       }
-      .award:last-child{
-  
-      }
-      .award:hover{
-        scale:1.035;
-        font-weight: 600;
-        background-color: #00000010;
-      }
     }
+    
 
     .titles {
       display: flex;

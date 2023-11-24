@@ -167,7 +167,8 @@ body {
     position: absolute;
     bottom: 8rem;
     left: 0;
-    background-image: linear-gradient(to right, #f5f5f5 30%, rgba(0, 131, 179, 0));
+    background-image: 
+      linear-gradient(to right, #f5f5f593 30%, rgba(0, 131, 179, 0));
     padding: 0 3rem;
     padding-bottom: 3rem;
     z-index: 1;
@@ -316,24 +317,17 @@ body {
 
 // ------media queries------
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1025px) {
   .main-container {
     .socials {
       left: 0rem;
     }
-  }
-
-  .creds {
-
-    .stats-titles-container {
-
-      .titles {
-        border-left: unset;
-        border-top: 5px solid black;
-        padding-top: 1rem;
-      }
+    .aduke-container{
+      left:2rem;
     }
   }
+
+  
 }
 
 @media screen and (max-width: 880px) {
@@ -341,13 +335,14 @@ body {
   .img-container {
     position: relative;
     bottom: 1rem;
+    height: 93%;
   }
 
   .menu-toggle {
     position: absolute;
     height: 50px;
     width: 50px;
-    top: 2.5rem;
+    top: 5rem;
     right: 2rem;
     cursor: pointer;
     z-index: 9999;
@@ -441,10 +436,14 @@ body {
 
     .aduke-container {
       bottom: 2rem;
+      left:0rem;
+      background-image: 
+      linear-gradient(to right, #f5f5f5 30%, rgba(0, 131, 179, 0));
 
       .aDuke {
         .bigAmy {
           top: 3.2rem;
+          left:-1rem;
         }
       }
     }
@@ -457,42 +456,29 @@ body {
 }
 
 @media screen and (max-width: 660px) {
-  .main-container {
-    .socials {
-      justify-content: left;
-      margin-left: 1rem;
-      width: unset;
-
-      .link-container {
-        a {
-          margin-right: 1rem;
-        }
-
-      }
-    }
-  }
+  
 
 
 }
 
-@media screen and (max-width: 500px) {
-  .main-container {
-    .creds .aduke-container .aDuke .bigDuke {
-      letter-spacing: -7px;
+// @media screen and (max-width: 500px) {
+//   .main-container {
+//     .creds .aduke-container .aDuke .bigDuke {
+//       letter-spacing: -7px;
 
-    }
+//     }
 
-    .socials {
-      .link-container {
-        a {
-          margin-right: 1rem;
-        }
-      }
-    }
-  }
+//     .socials {
+//       .link-container {
+//         a {
+//           margin-right: 1rem;
+//         }
+//       }
+//     }
+//   }
 
 
-}
+// }
 
 
 

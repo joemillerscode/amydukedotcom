@@ -186,7 +186,7 @@ body {
         display: block;
         position: relative;
         top: 3rem;
-        right: 1rem;
+        right: 2rem;
         font-size: 6vw;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 900;
@@ -238,14 +238,15 @@ body {
     .award-container {
       display: flex;
       flex-direction: column;
-      color: #06060692;
-      overflow-y: auto;
-      height: 30rem;
+      color: hsla(0, 0%, 2%, 0.573);
+      overflow: hidden;
+      height: 25rem;
       scrollbar-width: none;
       /* For Firefox */
       -ms-overflow-style: none;
       /* For Internet Explorer/Edge */
-
+      position: relative;
+      white-space: nowrap;
 
       .award-container::-webkit-scrollbar {
         display: none;
@@ -258,6 +259,7 @@ body {
         cursor: pointer;
         position: relative;
         /* Needed for positioning the pseudo-element */
+        display: inline-block;
 
         h3 {
           margin: 0;
@@ -285,7 +287,7 @@ body {
         }
 
         &:hover {
-          scale: 1.035;
+          // scale: 1.035;
           font-weight: 600;
           background-color: #00000010;
 
@@ -324,11 +326,6 @@ body {
   .creds {
 
     .stats-titles-container {
-      // flex-direction: column;
-
-      // .stats {
-      //   flex-direction: row;
-      // }
 
       .titles {
         border-left: unset;
@@ -500,24 +497,15 @@ body {
 
 
 //////////////////////////
-@media screen and (max-height: 800px) {}
+@media screen and (max-height: 800px) {
+  .creds{
+    .aduke-container{
+      display: block;
+      bottom: 7rem;
+    }
+  }
+}
 
 @media screen and (max-height: 600px) {
-  // .creds .stats-titles-container {
-  //   display: none;
-  // }
 
-  // .content-container {
-  //   justify-content: space-between;
-
-  //   .aduke-container {
-  //     padding: 0 1rem;
-  //   }
-
-  //   .socials {
-  //     a {
-  //       margin-left: 2rem;
-  //     }
-  //   }
-  // }
 }

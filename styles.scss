@@ -61,13 +61,12 @@
 body {
   margin: 0;
   padding: 0;
-  height: 99vh;
-  width: 99vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgb(0, 0, 0);
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .menu-toggle {
@@ -359,7 +358,7 @@ body {
 
   .img-container {
     position: relative;
-    bottom: 1rem;
+    // bottom: 1rem;
     height: 93%;
   }
 
@@ -460,7 +459,7 @@ body {
     position: unset;
 
     .aduke-container {
-      bottom: 2rem;
+      bottom: 1rem;
       left: 0rem;
       background-image:
         linear-gradient(to right, #f5f5f5 30%, rgba(0, 131, 179, 0));

@@ -37,6 +37,13 @@
 
 .menu ul li {
   cursor: pointer;
+  padding: 0 1rem;
+}
+
+.menu ul li:hover {
+  background-color: #0000003e;
+  color: #fff;
+
 }
 
 .menu ul li a {
@@ -91,7 +98,7 @@ body {
 
       a {
         color: rgba(0, 0, 0, 0.469);
-        margin-right: 5rem;
+        // margin-right: 5rem;
 
       }
 
@@ -167,7 +174,7 @@ body {
     position: absolute;
     bottom: 8rem;
     left: 0;
-    background-image: 
+    background-image:
       linear-gradient(to right, #f5f5f593 30%, rgba(0, 131, 179, 0));
     padding: 0 3rem;
     padding-bottom: 3rem;
@@ -322,15 +329,33 @@ body {
     .socials {
       left: 0rem;
     }
-    .aduke-container{
-      left:2rem;
+
+    .aduke-container {
+      left: 2rem;
     }
   }
 
-  
+
 }
 
 @media screen and (max-width: 880px) {
+  .main-container .socials {
+    // border: #0000001f solid 1px;
+    // width: 80%;
+    flex-direction: column;
+    padding-left: 2rem;
+
+    .link-container {
+      a {
+        padding: 0.5rem;
+
+        &:hover {
+          background-color: #00000010;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
 
   .img-container {
     position: relative;
@@ -342,7 +367,7 @@ body {
     position: absolute;
     height: 50px;
     width: 50px;
-    top: 5rem;
+    top: 3rem;
     right: 2rem;
     cursor: pointer;
     z-index: 9999;
@@ -436,14 +461,14 @@ body {
 
     .aduke-container {
       bottom: 2rem;
-      left:0rem;
-      background-image: 
-      linear-gradient(to right, #f5f5f5 30%, rgba(0, 131, 179, 0));
+      left: 0rem;
+      background-image:
+        linear-gradient(to right, #f5f5f5 30%, rgba(0, 131, 179, 0));
 
       .aDuke {
         .bigAmy {
           top: 3.2rem;
-          left:-1rem;
+          left: -1rem;
         }
       }
     }
@@ -455,10 +480,23 @@ body {
   }
 }
 
-@media screen and (max-width: 660px) {
-  
+@media screen and (max-width: 500px) {
+  .main-container {
+    .aduke-container {
 
+      // width: 90%;
+      .aDuke {
+        .bigDuke {
+          font-size: 30vw;
+        }
 
+        .bigAmy {
+          width: 8vw;
+          left: -0.5rem;
+        }
+      }
+    }
+  }
 }
 
 // @media screen and (max-width: 500px) {
@@ -484,14 +522,69 @@ body {
 
 //////////////////////////
 @media screen and (max-height: 800px) {
-  .creds{
-    .aduke-container{
-      display: block;
-      bottom: 7rem;
+  .main-container {
+    .content-container{
+      .creds{
+        .award-container{
+          height: 15rem;
+        }
+      }
     }
   }
 }
 
 @media screen and (max-height: 600px) {
+  .main-container {
+    .content-container{
+      .creds{
+        .aduke-container{
+          // bottom: 5rem;
+        }
+        .award-container{
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}
 
+@media screen and (max-height: 500px) {
+  .main-container {
+    .content-container{
+      .creds{
+        .stats-titles-container{
+          visibility: hidden;
+        }
+        .aduke-container{
+          bottom: 5rem;
+        }
+      }
+    }
+    .img-container{
+      height: 70%;
+    }
+  }
+}
+//////////////////////////////////
+@media (max-width: 880px) and (max-height: 500px) {
+  .main-container {
+    width:100%;
+    .content-container{
+      .creds{
+        .stats-titles-container{
+          display: block;
+          .award-container{
+            visibility: hidden;
+          }
+        }
+        .aduke-container{
+          left:-2rem;
+          top:3rem;
+        }
+      }
+      .img-container{
+        height: 80%;
+      }
+    }
+  }
 }

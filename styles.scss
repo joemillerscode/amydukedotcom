@@ -25,6 +25,17 @@ html{
   // align-items: center;
 
 }
+body {
+  // margin: 0 auto;
+  // max-width: 99%;
+  padding: 0;
+  height: 99vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  // overflow: hidden;
+}
 
 .menu {
   position: relative;
@@ -63,19 +74,6 @@ html{
 .menu ul li a:hover {
   color: #0000003e;
 
-}
-
-
-body {
-  // margin: 0 auto;
-  // max-width: 99%;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(0, 0, 0);
-  // overflow: hidden;
 }
 
 .menu-toggle {
@@ -487,23 +485,24 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .main-container {
-    .aduke-container {
-
-      // width: 90%;
-      .aDuke {
-        .bigDuke {
-          font-size: 30vw;
-        }
-
-        .bigAmy {
-          width: 8vw;
-          left: -0.5rem;
+  body{
+    .main-container {
+      height: 99%;
+      .aduke-container {
+        .aDuke {
+          .bigDuke {
+            font-size: 30vw;
+          }
+  
+          .bigAmy {
+            width: 8vw;
+            left: -0.5rem;
+          }
         }
       }
-    }
-    .socials{
-      width: fit-content;
+      .socials{
+        width: fit-content;
+      }
     }
   }
 }

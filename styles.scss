@@ -104,6 +104,8 @@ body {
 
       a {
         color: rgba(0, 0, 0, 0.469);
+        margin-right: 1rem;
+
       }
 
       a i {
@@ -272,7 +274,13 @@ body {
         position: relative;
         /* Needed for positioning the pseudo-element */
         display: inline-block;
+        text-decoration: none;
+        color: hsla(0, 0%, 2%, 0.573);
 
+        a{
+      color: hsla(0, 0%, 2%, 0.573);
+
+        }
         h3 {
           margin: 0;
         }
@@ -485,24 +493,21 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  body{
-    .main-container {
-      height: 99%;
-      .aduke-container {
-        .aDuke {
-          .bigDuke {
-            font-size: 30vw;
-          }
-  
-          .bigAmy {
-            width: 8vw;
-            left: -0.5rem;
-          }
+  .main-container {
+    .aduke-container {
+      .aDuke {
+        .bigDuke {
+          font-size: 30vw;
+        }
+
+        .bigAmy {
+          width: 8vw;
+          left: -0.5rem;
         }
       }
-      .socials{
-        width: fit-content;
-      }
+    }
+    .socials{
+      width: fit-content;
     }
   }
 }

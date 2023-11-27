@@ -18,6 +18,14 @@
   background-color: #fff;
 }
 
+html{
+  scroll-behavior: smooth;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+}
+
 .menu {
   position: relative;
   top: 1.5rem;
@@ -37,7 +45,7 @@
 
 .menu ul li {
   cursor: pointer;
-  padding: 0 1rem;
+  // padding: 0 1rem;
 }
 
 .menu ul li:hover {
@@ -59,7 +67,8 @@
 
 
 body {
-  margin: 0;
+  // margin: 0 auto;
+  // max-width: 99%;
   padding: 0;
   height: 100vh;
   display: flex;
@@ -97,8 +106,6 @@ body {
 
       a {
         color: rgba(0, 0, 0, 0.469);
-        // margin-right: 5rem;
-
       }
 
       a i {
@@ -495,27 +502,11 @@ body {
         }
       }
     }
+    .socials{
+      width: fit-content;
+    }
   }
 }
-
-// @media screen and (max-width: 500px) {
-//   .main-container {
-//     .creds .aduke-container .aDuke .bigDuke {
-//       letter-spacing: -7px;
-
-//     }
-
-//     .socials {
-//       .link-container {
-//         a {
-//           margin-right: 1rem;
-//         }
-//       }
-//     }
-//   }
-
-
-// }
 
 
 

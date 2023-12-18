@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Get the actual viewport height
+let vh = window.innerHeight * 0.01;
+
+// Set the value in the --vh custom property
+document.documentElement.style.setProperty('--vh', `${vh}px`);
   const menuToggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.menu');
   const hamburger = document.querySelector('.hamburger');

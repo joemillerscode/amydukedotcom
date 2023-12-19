@@ -57,13 +57,15 @@ body {
 
 .menu ul li {
   cursor: pointer;
-  // padding: 0 1rem;
-
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  // border: transparent solid 2px;
 }
 
 .menu ul li:hover {
   background-color: #0000003e;
-  color: #fff;
+  // border: rgba(0, 0, 0, 0.076) solid 2px;
+  // color: #ffffff;
 
 }
 
@@ -71,10 +73,12 @@ body {
   color: rgba(0, 0, 0, 0.469);
   text-decoration: none;
   font-size: 1.1rem;
+  padding: 1rem;
+
 }
 
 .menu ul li a:hover {
-  color: #0000003e;
+  color: #ffffff;
 
 }
 

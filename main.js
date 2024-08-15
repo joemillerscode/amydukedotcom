@@ -35,7 +35,7 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 
   // Function to start the scrolling
   const startScrolling = () => {
-    scrollInterval = setInterval(scrollContent, 20);
+    scrollInterval = setInterval(scrollContent, 30);
   };
 
   // Function to stop the scrolling
